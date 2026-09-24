@@ -1,6 +1,7 @@
 import { getToken, clearSession } from './auth'
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8000/api/v1'
+const BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ?? "http://10.236.192.108:8000/api/v1";
 
 export class ApiError extends Error {
   status: number
